@@ -1,0 +1,151 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: tahoma, arial;
+}
+
+section{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slider_container {
+    margin: 10px auto;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    opacity: 0;
+    z-index: 1;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.slide.active{
+    opacity: 1;
+    transition: 1s;
+}
+.slide::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.267);
+    z-index: -1;
+}
+
+.slide1{
+    background-image: url(11.jpg);
+}
+.slide2{
+    background-image: url(22.jpg);
+}
+.slide3{
+    background-image: url(33.jpg);
+}
+.slide4{
+    background-image: url(44.jpg);
+}
+.slide5{
+    background-image: url(55.jpg);
+}
+
+.slider_container img.active{
+    opacity: 1;
+
+}
+
+.slide_number{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgb(0,0,0,0.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 6px;
+}
+
+.slider_controls{
+    width: 400px;
+    margin: auto;
+    overflow:hidden;
+    z-index: 8;
+}
+
+.slider_controls .prev,
+.slider_controls .next {
+    background-color: #009688;
+    color: #fff;
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding:5px;
+    user-select: none;
+    
+}
+
+.slider_controls .prev{
+    float: left;
+}
+
+.slider_controls .next{
+    float: right;
+}
+
+
+
+.slider_controls .prev.disabled,
+.slider_controls .next.disabled{
+    background-color: rgb(0,150,136,0.5);
+    cursor: no-drop;
+}
+
+.slider_controls .indicators{
+    width: 60%;
+    float: left;
+}
+
+.slider_controls .indicators ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+.slider_controls .indicators ul li{
+    display: inline-block;
+    background-color: #f6f6f6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.slider_controls .indicators ul li.active{
+    background-color: #009688;
+    color: #fff;
+}
+

@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+
+}
+
+.nav-bar{
+        background-color: rgb(255, 255, 255);
+    height: 46px;
+    margin: -9px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    z-index: 3;
+    position: relative;
+    padding: 0 100px;
+}
+
+.logo{
+    width: 71px;
+    height: 18px;
+    margin-top: 12px;
+}
+
+.nav-items{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    align-items: center;
+}
+
+.home,
+.about,
+.contact,
+.careers,
+.blog{
+    cursor: pointer;
+}
+
+.home:hover,
+.about:hover,
+.contact:hover,
+.careers:hover,
+.blog:hover{
+    color: rgb(172, 111, 111);
+}
+
+.request.first{
+    margin-top: 9px;
+}
+
+.request{
+    background-image: linear-gradient(to right,#33d362,#2ab8d4);
+    width: 159px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 14px;
+    color: white;
+    cursor: pointer;;
+}
+
+.request:hover{
+    color: rgb(110, 106, 106);
+    background-image: linear-gradient(to right,#33d36370,#2ab8d480);
+
+}
+
+.main{
+    display: absolute;
+}
+
+.main-img1{
+    width: 815px;
+    height: 550px;
+    position: absolute;
+    top: -69px;
+    right: -294px;
+    z-index: 1;
+}
+
+.main-img2{
+    width: 438px;
+    height: 550px;
+    position: absolute;
+    top: -16px;
+    right: -98px;
+    z-index: 2;
+}
+
+.identity{
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    height: 400px;
+}
+
+.description{
+    width: 396px;
+    margin-top: 126px;
+    margin-left: 100px;
+}
+
+.title{
+    width: 390px;
+    font-size: 51px;
+    font-weight: 300;
+    margin-top: -56px;
+    margin-bottom: 0;
+}
+
+.text{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text-id{
+    margin: 3px 0;
+}
+
+.question-container{
+    width: 600px;
+    margin: 10px 100px;
+}
+
+
+
+.feature-container{
+    background-color: hsl(220, 16%, 96%);
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+}
+.feature{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 50px;
+}
+
+.feature1,
+.feature2,
+.feature3,
+.feature4{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 200px;
+}
+
+.feature img{
+    height: 50px;
+    width: 50px;
+}
+
+.articles-title{
+    padding: 0 100px;
+}
+
+.articles-container{
+    display: flex;
+    height: 332px;
+    flex-direction: row;
+    padding: 17px 100px 44px;
+
+}
+
+.writer{
+    font-size: 12px;
+}
+
+.article-title{
+    font-weight: 700;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.article-title:hover{
+    color: grey;
+}
+
+.second img{
+    height: 75px;
+    width: 75px;
+}
+
+.second{
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* img{
+    width: 50px;
+    height: 50px;
+} */
+
+footer{
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 200px;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: row;
+    margin: 39px 85px;
+    margin-left: -35px;
+}
+
+.nav-footer-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 25px;
+}
+
+.rights-container{
+    margin-top: 25px;
+}
+
+.rights{
+    color: white;
+    margin-top: ;
+}
+
+.logo.second{
+    width: 71px;
+    height: 18px;
+    margin-top: 32px;
+    margin-left: -36px;
+    background-color: white;
+}
